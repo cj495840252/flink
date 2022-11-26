@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="mysql8.0" uuid="fe6ae87a-b370-4ee2-b7f0-22a81e4dcbeb">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="mysql5.7" uuid="2ce6410d-fa77-44a8-aa98-ac72fecf66e5">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="hive" uuid="35dc9aa6-6b0d-4999-a825-6b849ffc09cf">
+      <driver-ref>hive</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.hive.jdbc.HiveDriver</jdbc-driver>
+      <jdbc-url>jdbc:hive2://node1:10000</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

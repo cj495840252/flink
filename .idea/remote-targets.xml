@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="root@192.168.88.161:22" type="ssh/sftp" uuid="bb96c4ba-05a1-44db-84eb-0d9354b1264a">
+        <config>
+          <option name="projectRootOnTarget" value="/root/flink-test" />
+          <option name="serverName" value="root@192.168.88.161:22 password" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="/export/server/jdk1.8.0_241" />
+            <option name="javaVersionString" value="1.8.0_241" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

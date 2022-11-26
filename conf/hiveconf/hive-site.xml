@@ -1,0 +1,56 @@
+<configuration>
+    <!-- 存储元数据mysql相关配置 -->
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://node1.itcast.cn:3306/hive3?createDatabaseIfNotExist=true&amp;useSSL=false</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>root</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>123456</value>
+    </property>
+
+    <!-- H2S运行绑定host -->
+    <property>
+        <name>hive.server2.thrift.bind.host</name>
+        <value>node1.itcast.cn</value>
+    </property>
+
+    <!-- 远程模式部署metastore metastore地址 -->
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://node1.itcast.cn:9083</value>
+    </property>
+
+    <!-- 关闭元数据存储授权  -->
+    <property>
+        <name>hive.metastore.event.db.notification.api.auth</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>hive.zookeeper.quorum</name>
+        <value>node1.itcast.cn,node2.itcast.cn,node3.itcast.cn</value>
+    </property>
+
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>node1.itcast.cn,node2.itcast.cn,node3.itcast.cn</value>
+    </property>
+
+    <property>
+        <name>hive.server2.enable.doAs</name>
+        <value>false</value>
+    </property>
+
+</configuration>

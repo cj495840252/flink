@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08c823ca-79fc-473f-b27b-784256e6f43c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.8.6" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.8.6\conf\settings2.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2EwGZEAyt2NJ0c5t8xZCeKrz4ne" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/JavaProject/flink-test/TestData/json.qiantao&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;hive&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JavaProject\flink-test\TestData\json.qiantao" />
+      <recent name="F:\JavaProject\flink-test\flinkTable\src\main\meta\META-INF\services" />
+      <recent name="F:\JavaProject\flink-test\flinkTable\src\main\META-INF" />
+      <recent name="F:\JavaProject\flink-test\flinkTable\src\main\resources\ META-IN" />
+      <recent name="F:\JavaProject\flink-test\flinkTable\src\main\resources\META-INF\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JavaProject\flink-test\TestData\json.嵌套" />
+      <recent name="F:\JavaProject\flink-test\conf\hiveconf" />
+      <recent name="F:\JavaProject\flink-test\flinkTable\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test.demos" />
+      <recent name="org.flink.demos.time_semanteme" />
+      <recent name="org.flink.demos.process_imp" />
+      <recent name="org.flink.demos.state" />
+      <recent name="org.flink.demos.window" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.test.demos.demo21_metricsCounter">
+    <configuration name="com.test.demos.demo18_customAggFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.test.demos.demo18_customAggFunction" />
+      <module name="flinkTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.demos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.test.demos.demo19_ArrayExplode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.test.demos.demo19_ArrayExplode" />
+      <module name="flinkTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.demos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.test.demos.demo19_TableFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.test.demos.demo19_TableFunction" />
+      <module name="flinkTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.demos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.test.demos.demo20_AggTableFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.test.demos.demo20_AggTableFunction" />
+      <module name="flinkTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.demos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.test.demos.demo21_metricsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.test.demos.demo21_metricsCounter" />
+      <module name="flinkTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.demos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="console.sql" type="OdpsQLRunnerConfigurationType" factoryName="MaxCompute SQL">
+      <odps_target_file>$APPLICATION_CONFIG_DIR$/consoles/db/35dc9aa6-6b0d-4999-a825-6b849ffc09cf/console.sql</odps_target_file>
+      <odps_output_dir>C:\Users\49584\AppData\Local\Temp\</odps_output_dir>
+      <job_name />
+      <odps_parameter name="odps.compiler.runmode" value="Studio" />
+      <odps_parameter name="odps.compiler.python.udf.signature.script" value="/util/python3/get_udf_sigs3.py" />
+      <odps_parameter name="odps.sql.type.system.odps2" value="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.test.demos.demo21_metricsCounter" />
+      <item itemvalue="Application.com.test.demos.demo20_AggTableFunction" />
+      <item itemvalue="Application.com.test.demos.demo19_TableFunction" />
+      <item itemvalue="Application.com.test.demos.demo19_ArrayExplode" />
+      <item itemvalue="Application.com.test.demos.demo18_customAggFunction" />
+      <item itemvalue="MaxCompute SQL.console.sql" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.test.demos.demo21_metricsCounter" />
+        <item itemvalue="Application.com.test.demos.demo20_AggTableFunction" />
+        <item itemvalue="Application.com.test.demos.demo19_TableFunction" />
+        <item itemvalue="Application.com.test.demos.demo19_ArrayExplode" />
+        <item itemvalue="Application.com.test.demos.demo18_customAggFunction" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\49584\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="08c823ca-79fc-473f-b27b-784256e6f43c" name="Changes" comment="" />
+      <created>1663499298392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663499298392</updated>
+      <workItem from="1663499304565" duration="8821000" />
+      <workItem from="1664973689634" duration="10900000" />
+      <workItem from="1665016309751" duration="3678000" />
+      <workItem from="1665482076304" duration="1613000" />
+      <workItem from="1665645541135" duration="4029000" />
+      <workItem from="1665732874592" duration="1581000" />
+      <workItem from="1665740619189" duration="270000" />
+      <workItem from="1665756999254" duration="5199000" />
+      <workItem from="1665818877989" duration="13938000" />
+      <workItem from="1665904707349" duration="16177000" />
+      <workItem from="1666093217884" duration="15732000" />
+      <workItem from="1666151257075" duration="25398000" />
+      <workItem from="1666422780208" duration="2776000" />
+      <workItem from="1666782964130" duration="17301000" />
+      <workItem from="1666840373429" duration="10785000" />
+      <workItem from="1666866826996" duration="8340000" />
+      <workItem from="1667129515960" duration="621000" />
+      <workItem from="1667281706986" duration="9911000" />
+      <workItem from="1667304231852" duration="4054000" />
+      <workItem from="1667642661121" duration="12184000" />
+      <workItem from="1667715941157" duration="18375000" />
+      <workItem from="1667967514719" duration="22343000" />
+      <workItem from="1668045588156" duration="2285000" />
+      <workItem from="1668160406371" duration="8468000" />
+      <workItem from="1668228630517" duration="22490000" />
+      <workItem from="1668391439580" duration="14360000" />
+      <workItem from="1668489235852" duration="21418000" />
+      <workItem from="1668517714957" duration="2691000" />
+      <workItem from="1668578956106" duration="5922000" />
+      <workItem from="1668604953463" duration="1514000" />
+      <workItem from="1668654063196" duration="26292000" />
+      <workItem from="1668736743209" duration="30176000" />
+      <workItem from="1668823829967" duration="24921000" />
+      <workItem from="1668907868258" duration="14214000" />
+      <workItem from="1669014739368" duration="3365000" />
+      <workItem from="1669098881729" duration="15358000" />
+      <workItem from="1669200466414" duration="298000" />
+      <workItem from="1669201816000" duration="1893000" />
+      <workItem from="1669261035934" duration="3854000" />
+      <workItem from="1669359570172" duration="6880000" />
+      <workItem from="1669451642857" duration="760000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.flink.api.common.InvalidProgramException" package="org.apache.flink.api.common" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.flink.table.api.ValidationException" package="org.apache.flink.table.api" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven/repository/org/apache/flink/flink-table-api-java/1.14.4/flink-table-api-java-1.14.4.jar!/org/apache/flink/table/api/internal/TableEnvironmentImpl.class</url>
+          <line>411</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/maven/repository/org/apache/flink/flink-table-api-java/1.14.4/flink-table-api-java-1.14.4.jar!/org/apache/flink/table/api/internal/TableEnvironmentImpl.class</url>
+          <line>262</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.flink.table.catalog.CatalogManager" memberName="builtInCatalogName" />
+        <PinnedItemInfo parentTag="java.util.LinkedHashMap$Entry" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((String)((LinkedHashMap.Entry)((LinkedHashMap)this.catalogManager.catalogs).entrySet().toArray()[0]).getKey()).value" custom="java.util.LinkedHashMap,java.util.LinkedHashMap.Entry,java.lang.String" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration monitorInterval="5">
+    <Properties>
+        <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n" />
+        <property name="LOG_LEVEL" value="INFO" />
+        <property name="LOG_HOME">/log</property>
+        <property name="log.file">/log</property>
+    </Properties>
+
+    <appenders>
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <ThresholdFilter level="${LOG_LEVEL}" onMatch="ACCEPT" onMismatch="DENY"/>
+        </console>
+        <File name="file" filename="${LOG_HOME}/flink.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"/>
+            <!--%date{HH:mm:ss.SSS}-->
+        </File>
+
+        <RollingFile name="rollingFile" fileName="logs/flink.log"
+                     filePattern="logs/flink-%d{yyyy-MM-dd HH}.log">
+            <!--日志级别过滤器-->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <!--日志拆分的规则-->
+                <!--在系统启动时触发拆分规则，产生一个新的-->
+                <OnStartupTriggeringPolicy/>
+                <!--文件大小，到达指定大小拆分-->
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+                <!--按照时间，上面定义的-->
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <!--当前文件夹最多30个，大于30个时，覆盖最旧的-->
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+
+
+    </appenders>
+
+    <loggers>
+        <root level="${LOG_LEVEL}">
+            <appender-ref ref="Console"/>
+            <appender-ref ref = "rollingFile"/>
+        </root>
+    </loggers>
+</configuration>

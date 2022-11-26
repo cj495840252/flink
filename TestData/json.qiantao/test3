@@ -1,0 +1,2 @@
+{"id":1,"friends":[{"name":"a","info":{"address":"北京","gender":"male"}},{"name":"b","info":{"address":"深圳","gender":"female"}}]}
+{"id":5,"friends":[{"name":"g","info":{"address":"成都","gender":"male"}},{"name":"r","info":{"address":"上海","gender":"female"}}]}

@@ -1,0 +1,68 @@
+16:58:43.385 [main] WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+16:58:43.393 [main] WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+16:58:45.754 [Source: Socket Stream -> Map -> DataSteamToTable(stream=default_catalog.default_database.bid, type=*com.test.demos.demo15_timewindow$Bid<`bidtime` STRING, `price` DOUBLE, `item` STRING>*, rowtime=false, watermark=false) -> Calc(select=[bidtime, price, item, CAST(bidtime) AS rt]) -> WatermarkAssigner(rowtime=[rt], watermark=[(rt - 1000:INTERVAL SECOND)]) -> Calc(select=[rt, price, item, current_watermark(CAST(rt)) AS wm]) -> StreamRecordTimestampInserter(rowtime field: 0) -> Sink: Collect table sink (1/1)#0] WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSteamToTable(stream=default_catalog.default_database.bid, type=*com.test.demos.demo15_timewindow$Bid<`bidtime` STRING, `price` DOUBLE, `item` STRING>*, rowtime=false, watermark=false) exceeded the 80 characters length limit and was truncated.
+16:59:34.605 [Source: Socket Stream -> Map -> DataSteamToTable(stream=default_catalog.default_database.bid, type=*com.test.demos.demo15_timewindow$Bid<`bidtime` STRING, `price` DOUBLE, `item` STRING>*, rowtime=false, watermark=false) -> Calc(select=[bidtime, price, item, CAST(bidtime) AS rt]) -> WatermarkAssigner(rowtime=[rt], watermark=[(rt - 1000:INTERVAL SECOND)]) -> Calc(select=[rt, price, item, current_watermark(CAST(rt)) AS wm]) -> StreamRecordTimestampInserter(rowtime field: 0) -> Sink: Collect table sink (1/1)#0] WARN  org.apache.flink.runtime.taskmanager.Task - Source: Socket Stream -> Map -> DataSteamToTable(stream=default_catalog.default_database.bid, type=*com.test.demos.demo15_timewindow$Bid<`bidtime` STRING, `price` DOUBLE, `item` STRING>*, rowtime=false, watermark=false) -> Calc(select=[bidtime, price, item, CAST(bidtime) AS rt]) -> WatermarkAssigner(rowtime=[rt], watermark=[(rt - 1000:INTERVAL SECOND)]) -> Calc(select=[rt, price, item, current_watermark(CAST(rt)) AS wm]) -> StreamRecordTimestampInserter(rowtime field: 0) -> Sink: Collect table sink (1/1)#0 (6f9c789d50fa48aa069a66f186f2df55) switched from RUNNING to FAILED with failure cause: java.lang.RuntimeException: RowTime field should not be null, please convert it to a non-null long value.
+	at org.apache.flink.table.runtime.operators.wmassigners.WatermarkAssignerOperator.processElement(WatermarkAssignerOperator.java:110)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at StreamExecCalc$8.processElement(Unknown Source)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.table.runtime.operators.source.InputConversionOperator.processElement(InputConversionOperator.java:128)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.pushToOperator(CopyingChainingOutput.java:82)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:57)
+	at org.apache.flink.streaming.runtime.tasks.CopyingChainingOutput.collect(CopyingChainingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:56)
+	at org.apache.flink.streaming.api.operators.CountingOutput.collect(CountingOutput.java:29)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$ManualWatermarkContext.processAndCollect(StreamSourceContexts.java:418)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$WatermarkContext.collect(StreamSourceContexts.java:513)
+	at org.apache.flink.streaming.api.operators.StreamSourceContexts$SwitchingOnClose.collect(StreamSourceContexts.java:103)
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:120)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:110)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:67)
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:323)
+
+16:59:34.632 [flink-akka.actor.default-dispatcher-10] WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+16:59:34.670 [main] WARN  org.apache.flink.streaming.api.operators.collect.CollectResultFetcher - Failed to get job status so we assume that the job has terminated. Some data might be lost.
+java.lang.IllegalStateException: MiniCluster is not yet running or has already been shut down.
+	at org.apache.flink.util.Preconditions.checkState(Preconditions.java:193) ~[flink-core-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniCluster.getDispatcherGatewayFuture(MiniCluster.java:878) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniCluster.runDispatcherCommand(MiniCluster.java:778) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniCluster.getJobStatus(MiniCluster.java:731) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniClusterJobClient.getJobStatus(MiniClusterJobClient.java:90) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultFetcher.isJobTerminated(CollectResultFetcher.java:203) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultFetcher.next(CollectResultFetcher.java:117) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultIterator.nextResultFromFetcher(CollectResultIterator.java:106) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultIterator.hasNext(CollectResultIterator.java:80) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.table.api.internal.TableResultImpl$CloseableRowIteratorWrapper.hasNext(TableResultImpl.java:370) ~[flink-table-api-java-1.14.4.jar:1.14.4]
+	at org.apache.flink.table.utils.PrintUtils.printAsTableauForm(PrintUtils.java:197) ~[flink-table-common-1.14.4.jar:1.14.4]
+	at org.apache.flink.table.api.internal.TableResultImpl.print(TableResultImpl.java:160) ~[flink-table-api-java-1.14.4.jar:1.14.4]
+	at com.test.demos.demo15_timewindow.main(demo15_timewindow.java:38) ~[classes/:?]
+16:59:34.678 [main] WARN  org.apache.flink.streaming.api.operators.collect.CollectResultFetcher - Failed to get job status so we assume that the job has terminated. Some data might be lost.
+java.lang.IllegalStateException: MiniCluster is not yet running or has already been shut down.
+	at org.apache.flink.util.Preconditions.checkState(Preconditions.java:193) ~[flink-core-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniCluster.getDispatcherGatewayFuture(MiniCluster.java:878) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniCluster.runDispatcherCommand(MiniCluster.java:778) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniCluster.getJobStatus(MiniCluster.java:731) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.minicluster.MiniClusterJobClient.getJobStatus(MiniClusterJobClient.java:90) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultFetcher.isJobTerminated(CollectResultFetcher.java:203) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultFetcher.cancelJob(CollectResultFetcher.java:225) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultFetcher.close(CollectResultFetcher.java:150) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultIterator.nextResultFromFetcher(CollectResultIterator.java:108) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.streaming.api.operators.collect.CollectResultIterator.hasNext(CollectResultIterator.java:80) ~[flink-streaming-java_2.12-1.14.4.jar:1.14.4]
+	at org.apache.flink.table.api.internal.TableResultImpl$CloseableRowIteratorWrapper.hasNext(TableResultImpl.java:370) ~[flink-table-api-java-1.14.4.jar:1.14.4]
+	at org.apache.flink.table.utils.PrintUtils.printAsTableauForm(PrintUtils.java:197) ~[flink-table-common-1.14.4.jar:1.14.4]
+	at org.apache.flink.table.api.internal.TableResultImpl.print(TableResultImpl.java:160) ~[flink-table-api-java-1.14.4.jar:1.14.4]
+	at com.test.demos.demo15_timewindow.main(demo15_timewindow.java:38) ~[classes/:?]

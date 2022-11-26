@@ -1,0 +1,413 @@
+21:42:05.478 [main] INFO  org.apache.flink.configuration.Configuration - Config uses fallback configuration key 'rest.port' instead of key 'rest.bind-port'
+21:42:05.492 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option taskmanager.cpu.cores required for local execution is not set, setting it to the maximal possible value.
+21:42:05.492 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option taskmanager.memory.task.heap.size required for local execution is not set, setting it to the maximal possible value.
+21:42:05.492 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option taskmanager.memory.task.off-heap.size required for local execution is not set, setting it to the maximal possible value.
+21:42:05.511 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option taskmanager.memory.network.min required for local execution is not set, setting it to its default value 64 mb.
+21:42:05.511 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option taskmanager.memory.network.max required for local execution is not set, setting it to its default value 64 mb.
+21:42:05.511 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils - The configuration option taskmanager.memory.managed.size required for local execution is not set, setting it to its default value 128 mb.
+21:42:05.518 [main] INFO  org.apache.flink.runtime.minicluster.MiniCluster - Starting Flink Mini Cluster
+21:42:07.417 [main] INFO  org.apache.flink.runtime.minicluster.MiniCluster - Starting Metrics Registry
+21:42:07.532 [main] INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl - No metrics reporter configured, no metrics will be exposed/reported.
+21:42:07.533 [main] INFO  org.apache.flink.runtime.minicluster.MiniCluster - Starting RPC Service(s)
+21:42:07.553 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils - Trying to start local actor system
+21:42:08.485 [flink-akka.actor.default-dispatcher-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+21:42:08.631 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils - Actor system started at akka://flink
+21:42:08.650 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils - Trying to start local actor system
+21:42:08.663 [flink-metrics-6] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+21:42:08.673 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils - Actor system started at akka://flink-metrics
+21:42:08.688 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/rpc/MetricQueryService .
+21:42:08.718 [main] INFO  org.apache.flink.runtime.minicluster.MiniCluster - Starting high-availability services
+21:42:08.733 [main] INFO  org.apache.flink.runtime.blob.BlobServer - Created BLOB server storage directory C:\Users\49584\AppData\Local\Temp\blobStore-04cd28a8-188a-4bfe-aeab-76715ef63ce8
+21:42:08.740 [main] INFO  org.apache.flink.runtime.blob.BlobServer - Started BLOB server at 0.0.0.0:57210 - max concurrent requests: 50 - max backlog: 1000
+21:42:08.745 [main] INFO  org.apache.flink.runtime.blob.PermanentBlobCache - Created BLOB cache storage directory C:\Users\49584\AppData\Local\Temp\blobStore-b79290e5-9f39-4fe3-a041-28ea932f9f62
+21:42:08.747 [main] INFO  org.apache.flink.runtime.blob.TransientBlobCache - Created BLOB cache storage directory C:\Users\49584\AppData\Local\Temp\blobStore-95dd32a3-320d-4040-b041-08ea9f3147c3
+21:42:08.748 [main] INFO  org.apache.flink.runtime.minicluster.MiniCluster - Starting 1 TaskManager(s)
+21:42:08.755 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerRunner - Starting TaskManager with ResourceID: 76aaf070-4264-4b4f-89ed-ff916fe31a64
+21:42:08.776 [main] INFO  org.apache.flink.runtime.taskexecutor.TaskManagerServices - Temporary file directory 'C:\Users\49584\AppData\Local\Temp': total 103 GB, usable 13 GB (12.62% usable)
+21:42:08.785 [main] INFO  org.apache.flink.runtime.io.disk.iomanager.IOManager - Created a new FileChannelManager for spilling of task related data to disk (joins, sorting, ...). Used directories:
+	C:\Users\49584\AppData\Local\Temp\flink-io-be19153f-cb14-4bec-8520-01ff7cf3594c
+21:42:08.798 [main] INFO  org.apache.flink.runtime.io.network.NettyShuffleServiceFactory - Created a new FileChannelManager for storing result partitions of BLOCKING shuffles. Used directories:
+	C:\Users\49584\AppData\Local\Temp\flink-netty-shuffle-9c25fce7-4155-47c8-9fc2-828b3962fed7
+21:42:08.853 [main] INFO  org.apache.flink.runtime.io.network.buffer.NetworkBufferPool - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+21:42:08.872 [main] INFO  org.apache.flink.runtime.io.network.NettyShuffleEnvironment - Starting the network environment and its components.
+21:42:08.875 [main] INFO  org.apache.flink.runtime.taskexecutor.KvStateService - Starting the kvState service and its components.
+21:42:08.917 [main] INFO  org.apache.flink.configuration.Configuration - Config uses fallback configuration key 'akka.ask.timeout' instead of key 'taskmanager.slot.timeout'
+21:42:08.951 [main] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/rpc/taskmanager_0 .
+21:42:09.002 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService - Start job leader service.
+21:42:09.006 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.filecache.FileCache - User file cache uses directory C:\Users\49584\AppData\Local\Temp\flink-dist-cache-876915c4-4725-4963-9329-ec3087f6873f
+21:42:09.054 [main] INFO  org.apache.flink.configuration.Configuration - Config uses fallback configuration key 'rest.port' instead of key 'rest.bind-port'
+21:42:09.157 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - Starting rest endpoint.
+21:42:09.667 [main] WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+21:42:09.668 [main] INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Determined location of main cluster component log file: F:\JavaProject\flink-test\logs
+21:42:09.668 [main] INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Determined location of main cluster component stdout file: F:\JavaProject\flink-test\lout
+21:42:11.679 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - Rest endpoint listening at localhost:8081
+21:42:11.681 [main] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender http://localhost:8081
+21:42:11.683 [main] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - Web frontend listening at http://localhost:8081.
+21:42:11.684 [mini-cluster-io-thread-1] INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint - http://localhost:8081 was granted leadership with leaderSessionID=9472f673-c577-4adf-a80f-a6b5a32d3dd3
+21:42:11.687 [mini-cluster-io-thread-1] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader http://localhost:8081 , session=9472f673-c577-4adf-a80f-a6b5a32d3dd3
+21:42:11.704 [main] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender LeaderContender: DefaultDispatcherRunner
+21:42:11.704 [main] INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl - Starting resource manager service.
+21:42:11.704 [main] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender LeaderContender: ResourceManagerServiceImpl
+21:42:11.705 [mini-cluster-io-thread-2] INFO  org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunner - DefaultDispatcherRunner was granted leadership with leader id 2cb9e69e-3088-4e6a-ba4f-d66a732eb23a. Creating new DispatcherLeaderProcess.
+21:42:11.707 [pool-3-thread-1] INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl - Resource manager service is granted leadership with session id 5a1e616a-e5d1-4acd-9f29-e362c99a76bf.
+21:42:11.711 [main] INFO  org.apache.flink.runtime.minicluster.MiniCluster - Flink Mini Cluster started successfully
+21:42:11.713 [mini-cluster-io-thread-2] INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess - Start SessionDispatcherLeaderProcess.
+21:42:11.715 [mini-cluster-io-thread-1] INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess - Recover all persisted job graphs.
+21:42:11.715 [mini-cluster-io-thread-1] INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess - Successfully recovered 0 persisted job graphs.
+21:42:11.727 [mini-cluster-io-thread-1] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/rpc/dispatcher_1 .
+21:42:11.735 [pool-3-thread-1] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/rpc/resourcemanager_2 .
+21:42:11.746 [mini-cluster-io-thread-1] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader akka://flink/user/rpc/dispatcher_1 , session=2cb9e69e-3088-4e6a-ba4f-d66a732eb23a
+21:42:11.767 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Starting the resource manager.
+21:42:11.782 [mini-cluster-io-thread-2] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader akka://flink/user/rpc/resourcemanager_2 , session=5a1e616a-e5d1-4acd-9f29-e362c99a76bf
+21:42:11.784 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Connecting to ResourceManager akka://flink/user/rpc/resourcemanager_2(9f29e362c99a76bf5a1e616ae5d14acd).
+21:42:11.811 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Resolved ResourceManager address, beginning registration
+21:42:11.831 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Registering TaskManager with ResourceID 76aaf070-4264-4b4f-89ed-ff916fe31a64 (akka://flink/user/rpc/taskmanager_0) at ResourceManager
+21:42:11.833 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher - Received JobGraph submission 'Flink Streaming Job' (5d9199b7090d5f80dd41447a412a878b).
+21:42:11.835 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher - Submitting job 'Flink Streaming Job' (5d9199b7090d5f80dd41447a412a878b).
+21:42:11.836 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Successful registration at resource manager akka://flink/user/rpc/resourcemanager_2 under registration id 93d2ac47f4c69b4f408a08277c3666ea.
+21:42:11.877 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Proposing leadership to contender LeaderContender: JobMasterServiceLeadershipRunner
+21:42:11.958 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.rpc.akka.AkkaRpcService - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_3 .
+21:42:11.974 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Initializing job 'Flink Streaming Job' (5d9199b7090d5f80dd41447a412a878b).
+21:42:12.038 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Using restart back off time strategy NoRestartBackoffTimeStrategy for Flink Streaming Job (5d9199b7090d5f80dd41447a412a878b).
+21:42:12.117 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Running initialization on master for job Flink Streaming Job (5d9199b7090d5f80dd41447a412a878b).
+21:42:12.117 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Successfully ran initialization on master in 0 ms.
+21:42:12.151 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology - Built 1 pipelined regions in 1 ms
+21:42:12.208 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@4b2cf7c
+21:42:12.209 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.state.StateBackendLoader - State backend loader loads the state backend as HashMapStateBackend
+21:42:12.214 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Checkpoint storage is set to 'jobmanager'
+21:42:12.278 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator - No checkpoint found during restore.
+21:42:12.347 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@3c54eab4 for Flink Streaming Job (5d9199b7090d5f80dd41447a412a878b).
+21:42:12.448 [jobmanager-io-thread-1] INFO  org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService - Received confirmation of leadership for leader akka://flink/user/rpc/jobmanager_3 , session=4a19fc1f-4bf4-4950-9b52-7c41b95f4607
+21:42:12.452 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Starting execution of job 'Flink Streaming Job' (5d9199b7090d5f80dd41447a412a878b) under job master id 9b527c41b95f46074a19fc1f4bf44950.
+21:42:12.453 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+21:42:12.453 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Job Flink Streaming Job (5d9199b7090d5f80dd41447a412a878b) switched from state CREATED to RUNNING.
+21:42:12.462 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Socket Stream (1/1) (799e0b9dcfd8fee41a8a43ce0a097e54) switched from CREATED to SCHEDULED.
+21:42:12.462 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (1/4) (eed47eaa65db063f7b4ffcd7febf1a5c) switched from CREATED to SCHEDULED.
+21:42:12.462 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (2/4) (cccca7b0d1d711df274c34c69be05e8d) switched from CREATED to SCHEDULED.
+21:42:12.462 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (3/4) (028cb17805109c7cb20bbacb64015f7d) switched from CREATED to SCHEDULED.
+21:42:12.462 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (4/4) (64a2e5efd8598e75213fb81449a18a3c) switched from CREATED to SCHEDULED.
+21:42:12.490 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Connecting to ResourceManager akka://flink/user/rpc/resourcemanager_2(9f29e362c99a76bf5a1e616ae5d14acd)
+21:42:12.493 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.jobmaster.JobMaster - Resolved ResourceManager address, beginning registration
+21:42:12.495 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Registering job manager 9b527c41b95f46074a19fc1f4bf44950@akka://flink/user/rpc/jobmanager_3 for job 5d9199b7090d5f80dd41447a412a878b.
+21:42:12.502 [flink-akka.actor.default-dispatcher-10] INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager - Registered job manager 9b527c41b95f46074a19fc1f4bf44950@akka://flink/user/rpc/jobmanager_3 for job 5d9199b7090d5f80dd41447a412a878b.
+21:42:12.507 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.jobmaster.JobMaster - JobManager successfully registered at ResourceManager, leader id: 9f29e362c99a76bf5a1e616ae5d14acd.
+21:42:12.509 [flink-akka.actor.default-dispatcher-10] INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager - Received resource requirements from job 5d9199b7090d5f80dd41447a412a878b: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=4}]
+21:42:12.516 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Receive slot request 0b0693b0f6c1753ed676e4a32dc11688 for job 5d9199b7090d5f80dd41447a412a878b from resource manager with leader id 9f29e362c99a76bf5a1e616ae5d14acd.
+21:42:12.522 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Allocated slot for 0b0693b0f6c1753ed676e4a32dc11688.
+21:42:12.524 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService - Add job 5d9199b7090d5f80dd41447a412a878b for job leader monitoring.
+21:42:12.526 [mini-cluster-io-thread-4] INFO  org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService - Try to register at job manager akka://flink/user/rpc/jobmanager_3 with leader id 4a19fc1f-4bf4-4950-9b52-7c41b95f4607.
+21:42:12.527 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Receive slot request 98ce18afa303aafb26043bf500692066 for job 5d9199b7090d5f80dd41447a412a878b from resource manager with leader id 9f29e362c99a76bf5a1e616ae5d14acd.
+21:42:12.527 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Allocated slot for 98ce18afa303aafb26043bf500692066.
+21:42:12.528 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Receive slot request e59558c6337b2c592fd851f425ffb022 for job 5d9199b7090d5f80dd41447a412a878b from resource manager with leader id 9f29e362c99a76bf5a1e616ae5d14acd.
+21:42:12.528 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Allocated slot for e59558c6337b2c592fd851f425ffb022.
+21:42:12.529 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Receive slot request 04016018979736bb024820f9443650d9 for job 5d9199b7090d5f80dd41447a412a878b from resource manager with leader id 9f29e362c99a76bf5a1e616ae5d14acd.
+21:42:12.529 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Allocated slot for 04016018979736bb024820f9443650d9.
+21:42:12.529 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService - Resolved JobManager address, beginning registration
+21:42:12.534 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService - Successful registration at job manager akka://flink/user/rpc/jobmanager_3 for job 5d9199b7090d5f80dd41447a412a878b.
+21:42:12.535 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Establish JobManager connection for job 5d9199b7090d5f80dd41447a412a878b.
+21:42:12.540 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Offer reserved slots to the leader of job 5d9199b7090d5f80dd41447a412a878b.
+21:42:12.551 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Socket Stream (1/1) (799e0b9dcfd8fee41a8a43ce0a097e54) switched from SCHEDULED to DEPLOYING.
+21:42:12.551 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Deploying Source: Socket Stream (1/1) (attempt #0) with attempt id 799e0b9dcfd8fee41a8a43ce0a097e54 to 76aaf070-4264-4b4f-89ed-ff916fe31a64 @ 127.0.0.1 (dataPort=-1) with allocation id e59558c6337b2c592fd851f425ffb022
+21:42:12.558 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (1/4) (eed47eaa65db063f7b4ffcd7febf1a5c) switched from SCHEDULED to DEPLOYING.
+21:42:12.558 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Deploying Process -> Sink: Print to Std. Out (1/4) (attempt #0) with attempt id eed47eaa65db063f7b4ffcd7febf1a5c to 76aaf070-4264-4b4f-89ed-ff916fe31a64 @ 127.0.0.1 (dataPort=-1) with allocation id e59558c6337b2c592fd851f425ffb022
+21:42:12.560 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot e59558c6337b2c592fd851f425ffb022.
+21:42:12.566 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (2/4) (cccca7b0d1d711df274c34c69be05e8d) switched from SCHEDULED to DEPLOYING.
+21:42:12.566 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Deploying Process -> Sink: Print to Std. Out (2/4) (attempt #0) with attempt id cccca7b0d1d711df274c34c69be05e8d to 76aaf070-4264-4b4f-89ed-ff916fe31a64 @ 127.0.0.1 (dataPort=-1) with allocation id 0b0693b0f6c1753ed676e4a32dc11688
+21:42:12.567 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (3/4) (028cb17805109c7cb20bbacb64015f7d) switched from SCHEDULED to DEPLOYING.
+21:42:12.567 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Deploying Process -> Sink: Print to Std. Out (3/4) (attempt #0) with attempt id 028cb17805109c7cb20bbacb64015f7d to 76aaf070-4264-4b4f-89ed-ff916fe31a64 @ 127.0.0.1 (dataPort=-1) with allocation id 04016018979736bb024820f9443650d9
+21:42:12.567 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (4/4) (64a2e5efd8598e75213fb81449a18a3c) switched from SCHEDULED to DEPLOYING.
+21:42:12.567 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Deploying Process -> Sink: Print to Std. Out (4/4) (attempt #0) with attempt id 64a2e5efd8598e75213fb81449a18a3c to 76aaf070-4264-4b4f-89ed-ff916fe31a64 @ 127.0.0.1 (dataPort=-1) with allocation id 98ce18afa303aafb26043bf500692066
+21:42:12.579 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.state.changelog.StateChangelogStorageLoader - StateChangelogStorageLoader initialized with shortcut names {memory}.
+21:42:12.580 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.state.changelog.StateChangelogStorageLoader - Creating a changelog storage with name 'memory'.
+21:42:12.607 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Received task Source: Socket Stream (1/1)#0 (799e0b9dcfd8fee41a8a43ce0a097e54), deploy into slot with allocation id e59558c6337b2c592fd851f425ffb022.
+21:42:12.608 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Source: Socket Stream (1/1)#0 (799e0b9dcfd8fee41a8a43ce0a097e54) switched from CREATED to DEPLOYING.
+21:42:12.609 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot e59558c6337b2c592fd851f425ffb022.
+21:42:12.613 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Loading JAR files for task Source: Socket Stream (1/1)#0 (799e0b9dcfd8fee41a8a43ce0a097e54) [DEPLOYING].
+21:42:12.625 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Received task Process -> Sink: Print to Std. Out (1/4)#0 (eed47eaa65db063f7b4ffcd7febf1a5c), deploy into slot with allocation id e59558c6337b2c592fd851f425ffb022.
+21:42:12.627 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 0b0693b0f6c1753ed676e4a32dc11688.
+21:42:12.631 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (1/4)#0 (eed47eaa65db063f7b4ffcd7febf1a5c) switched from CREATED to DEPLOYING.
+21:42:12.632 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Loading JAR files for task Process -> Sink: Print to Std. Out (1/4)#0 (eed47eaa65db063f7b4ffcd7febf1a5c) [DEPLOYING].
+21:42:12.636 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Received task Process -> Sink: Print to Std. Out (2/4)#0 (cccca7b0d1d711df274c34c69be05e8d), deploy into slot with allocation id 0b0693b0f6c1753ed676e4a32dc11688.
+21:42:12.637 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot e59558c6337b2c592fd851f425ffb022.
+21:42:12.638 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 04016018979736bb024820f9443650d9.
+21:42:12.638 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 0b0693b0f6c1753ed676e4a32dc11688.
+21:42:12.638 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 98ce18afa303aafb26043bf500692066.
+21:42:12.638 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 04016018979736bb024820f9443650d9.
+21:42:12.640 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (2/4)#0 (cccca7b0d1d711df274c34c69be05e8d) switched from CREATED to DEPLOYING.
+21:42:12.642 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Loading JAR files for task Process -> Sink: Print to Std. Out (2/4)#0 (cccca7b0d1d711df274c34c69be05e8d) [DEPLOYING].
+21:42:12.648 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Received task Process -> Sink: Print to Std. Out (3/4)#0 (028cb17805109c7cb20bbacb64015f7d), deploy into slot with allocation id 04016018979736bb024820f9443650d9.
+21:42:12.649 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl - Activate slot 98ce18afa303aafb26043bf500692066.
+21:42:12.654 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (3/4)#0 (028cb17805109c7cb20bbacb64015f7d) switched from CREATED to DEPLOYING.
+21:42:12.654 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Loading JAR files for task Process -> Sink: Print to Std. Out (3/4)#0 (028cb17805109c7cb20bbacb64015f7d) [DEPLOYING].
+21:42:12.661 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@2361070d
+21:42:12.662 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.runtime.state.StateBackendLoader - State backend loader loads the state backend as HashMapStateBackend
+21:42:12.663 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - Checkpoint storage is set to 'jobmanager'
+21:42:12.673 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@370eecce
+21:42:12.674 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.runtime.state.StateBackendLoader - State backend loader loads the state backend as HashMapStateBackend
+21:42:12.674 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - Checkpoint storage is set to 'jobmanager'
+21:42:12.675 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (2/4)#0 (cccca7b0d1d711df274c34c69be05e8d) switched from DEPLOYING to INITIALIZING.
+21:42:12.678 [flink-akka.actor.default-dispatcher-10] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (2/4) (cccca7b0d1d711df274c34c69be05e8d) switched from DEPLOYING to INITIALIZING.
+21:42:12.679 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.taskexecutor.TaskExecutor - Received task Process -> Sink: Print to Std. Out (4/4)#0 (64a2e5efd8598e75213fb81449a18a3c), deploy into slot with allocation id 98ce18afa303aafb26043bf500692066.
+21:42:12.678 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@11a5b19e
+21:42:12.680 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.runtime.state.StateBackendLoader - State backend loader loads the state backend as HashMapStateBackend
+21:42:12.680 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - Checkpoint storage is set to 'jobmanager'
+21:42:12.680 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (3/4)#0 (028cb17805109c7cb20bbacb64015f7d) switched from DEPLOYING to INITIALIZING.
+21:42:12.681 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (1/4)#0 (eed47eaa65db063f7b4ffcd7febf1a5c) switched from DEPLOYING to INITIALIZING.
+21:42:12.682 [flink-akka.actor.default-dispatcher-10] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (3/4) (028cb17805109c7cb20bbacb64015f7d) switched from DEPLOYING to INITIALIZING.
+21:42:12.684 [flink-akka.actor.default-dispatcher-10] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (1/4) (eed47eaa65db063f7b4ffcd7febf1a5c) switched from DEPLOYING to INITIALIZING.
+21:42:12.686 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (4/4)#0 (64a2e5efd8598e75213fb81449a18a3c) switched from CREATED to DEPLOYING.
+21:42:12.687 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Loading JAR files for task Process -> Sink: Print to Std. Out (4/4)#0 (64a2e5efd8598e75213fb81449a18a3c) [DEPLOYING].
+21:42:12.689 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@39be24f9
+21:42:12.689 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.runtime.state.StateBackendLoader - State backend loader loads the state backend as HashMapStateBackend
+21:42:12.689 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - Checkpoint storage is set to 'jobmanager'
+21:42:12.690 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (4/4)#0 (64a2e5efd8598e75213fb81449a18a3c) switched from DEPLOYING to INITIALIZING.
+21:42:12.690 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (4/4) (64a2e5efd8598e75213fb81449a18a3c) switched from DEPLOYING to INITIALIZING.
+21:42:12.692 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@29254cfb
+21:42:12.693 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.runtime.state.StateBackendLoader - State backend loader loads the state backend as HashMapStateBackend
+21:42:12.693 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.streaming.runtime.tasks.StreamTask - Checkpoint storage is set to 'jobmanager'
+21:42:12.700 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Source: Socket Stream (1/1)#0 (799e0b9dcfd8fee41a8a43ce0a097e54) switched from DEPLOYING to INITIALIZING.
+21:42:12.704 [flink-akka.actor.default-dispatcher-6] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Socket Stream (1/1) (799e0b9dcfd8fee41a8a43ce0a097e54) switched from DEPLOYING to INITIALIZING.
+21:42:12.823 [Source: Socket Stream (1/1)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Source: Socket Stream (1/1)#0 (799e0b9dcfd8fee41a8a43ce0a097e54) switched from INITIALIZING to RUNNING.
+21:42:12.824 [flink-akka.actor.default-dispatcher-9] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Source: Socket Stream (1/1) (799e0b9dcfd8fee41a8a43ce0a097e54) switched from INITIALIZING to RUNNING.
+21:42:12.829 [Legacy Source Thread - Source: Socket Stream (1/1)#0] INFO  org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction - Connecting to server socket node1:9999
+21:42:12.835 [Process -> Sink: Print to Std. Out (3/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (3/4)#0 (028cb17805109c7cb20bbacb64015f7d) switched from INITIALIZING to RUNNING.
+21:42:12.834 [Process -> Sink: Print to Std. Out (1/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (1/4)#0 (eed47eaa65db063f7b4ffcd7febf1a5c) switched from INITIALIZING to RUNNING.
+21:42:12.835 [Process -> Sink: Print to Std. Out (4/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (4/4)#0 (64a2e5efd8598e75213fb81449a18a3c) switched from INITIALIZING to RUNNING.
+21:42:12.834 [Process -> Sink: Print to Std. Out (2/4)#0] INFO  org.apache.flink.runtime.taskmanager.Task - Process -> Sink: Print to Std. Out (2/4)#0 (cccca7b0d1d711df274c34c69be05e8d) switched from INITIALIZING to RUNNING.
+21:42:12.836 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (3/4) (028cb17805109c7cb20bbacb64015f7d) switched from INITIALIZING to RUNNING.
+21:42:12.840 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (1/4) (eed47eaa65db063f7b4ffcd7febf1a5c) switched from INITIALIZING to RUNNING.
+21:42:12.841 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (4/4) (64a2e5efd8598e75213fb81449a18a3c) switched from INITIALIZING to RUNNING.
+21:42:12.841 [flink-akka.actor.default-dispatcher-8] INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph - Process -> Sink: Print to Std. Out (2/4) (cccca7b0d1d711df274c34c69be05e8d) switched from INITIALIZING to RUNNING.
+21:43:17.583 [flink-rest-server-netty-worker-thread-7] ERROR org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerStdoutFileHandler - Failed to transfer file from TaskExecutor 76aaf070-4264-4b4f-89ed-ff916fe31a64.
+java.util.concurrent.CompletionException: org.apache.flink.util.FlinkException: The file STDOUT is not available on the TaskExecutor.
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:686) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2019) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.rest.handler.taskmanager.AbstractTaskManagerFileHandler.respondToRequest(AbstractTaskManagerFileHandler.java:132) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.handler.AbstractHandler.respondAsLeader(AbstractHandler.java:195) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.handler.LeaderRetrievalHandler.lambda$channelRead0$0(LeaderRetrievalHandler.java:83) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at java.util.Optional.ifPresent(Optional.java:159) ~[?:1.8.0_241]
+	at org.apache.flink.util.OptionalConsumer.ifPresent(OptionalConsumer.java:45) ~[flink-core-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.handler.LeaderRetrievalHandler.channelRead0(LeaderRetrievalHandler.java:80) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.handler.LeaderRetrievalHandler.channelRead0(LeaderRetrievalHandler.java:49) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.shaded.netty4.io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.runtime.rest.handler.router.RouterHandler.routed(RouterHandler.java:115) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.handler.router.RouterHandler.channelRead0(RouterHandler.java:94) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.handler.router.RouterHandler.channelRead0(RouterHandler.java:55) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.shaded.netty4.io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.runtime.rest.FileUploadHandler.channelRead0(FileUploadHandler.java:238) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.rest.FileUploadHandler.channelRead0(FileUploadHandler.java:71) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.shaded.netty4.io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:324) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:296) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at org.apache.flink.shaded.netty4.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[flink-shaded-netty-4.1.65.Final-14.0.jar:?]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_241]
+Caused by: org.apache.flink.util.FlinkException: The file STDOUT is not available on the TaskExecutor.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByFilePath(TaskExecutor.java:2072) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByType(TaskExecutor.java:1180) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) ~[scala-library-2.12.7.jar:?]
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at akka.actor.Actor.aroundReceive(Actor.scala:537) ~[?:?]
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535) ~[?:?]
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) ~[?:?]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) ~[?:?]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548) ~[?:?]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) ~[?:?]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231) ~[?:?]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_241]
+21:43:17.650 [flink-rest-server-netty-worker-thread-7] ERROR org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerStdoutFileHandler - Unhandled exception.
+org.apache.flink.util.FlinkException: The file STDOUT is not available on the TaskExecutor.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByFilePath(TaskExecutor.java:2072) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByType(TaskExecutor.java:1180) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) ~[scala-library-2.12.7.jar:?]
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at akka.actor.Actor.aroundReceive(Actor.scala:537) ~[?:?]
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535) ~[?:?]
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) ~[?:?]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) ~[?:?]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548) ~[?:?]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) ~[?:?]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231) ~[?:?]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_241]
+21:43:18.007 [flink-akka.actor.default-dispatcher-23] ERROR org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogFileHandler - Failed to transfer file from TaskExecutor 76aaf070-4264-4b4f-89ed-ff916fe31a64.
+java.util.concurrent.CompletionException: org.apache.flink.util.FlinkException: The file LOG is not available on the TaskExecutor.
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler.lambda$invokeRpc$1(AkkaInvocationHandler.java:251) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990) ~[?:1.8.0_241]
+	at org.apache.flink.util.concurrent.FutureUtils.doForward(FutureUtils.java:1387) ~[flink-core-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$null$1(ClassLoadingUtils.java:93) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$guardCompletionWithContextClassLoader$2(ClassLoadingUtils.java:92) ~[?:?]
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488) ~[?:1.8.0_241]
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$1.onComplete(AkkaFutureUtils.java:45) ~[?:?]
+	at akka.dispatch.OnComplete.internal(Future.scala:299) ~[?:?]
+	at akka.dispatch.OnComplete.internal(Future.scala:297) ~[?:?]
+	at akka.dispatch.japi$CallbackBridge.apply(Future.scala:224) ~[?:?]
+	at akka.dispatch.japi$CallbackBridge.apply(Future.scala:221) ~[?:?]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[scala-library-2.12.7.jar:?]
+	at org.apache.flink.runtime.concurrent.akka.AkkaFutureUtils$DirectExecutionContext.execute(AkkaFutureUtils.java:65) ~[?:?]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:68) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:284) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:284) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:284) ~[scala-library-2.12.7.jar:?]
+	at akka.pattern.PromiseActorRef.$bang(AskSupport.scala:621) ~[?:?]
+	at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:25) ~[?:?]
+	at akka.pattern.PipeToSupport$PipeableFuture$$anonfun$pipeTo$1.applyOrElse(PipeToSupport.scala:23) ~[?:?]
+	at scala.concurrent.Future.$anonfun$andThen$1(Future.scala:532) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60) ~[scala-library-2.12.7.jar:?]
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63) ~[?:?]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100) ~[?:?]
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12) ~[scala-library-2.12.7.jar:?]
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81) ~[scala-library-2.12.7.jar:?]
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100) ~[?:?]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49) ~[?:?]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_241]
+Caused by: org.apache.flink.util.FlinkException: The file LOG is not available on the TaskExecutor.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByFilePath(TaskExecutor.java:2072) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByType(TaskExecutor.java:1180) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) ~[scala-library-2.12.7.jar:?]
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at akka.actor.Actor.aroundReceive(Actor.scala:537) ~[?:?]
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535) ~[?:?]
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) ~[?:?]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) ~[?:?]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548) ~[?:?]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) ~[?:?]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231) ~[?:?]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243) ~[?:?]
+	... 4 more
+21:43:18.059 [flink-akka.actor.default-dispatcher-23] ERROR org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogFileHandler - Unhandled exception.
+org.apache.flink.util.FlinkException: The file LOG is not available on the TaskExecutor.
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByFilePath(TaskExecutor.java:2072) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at org.apache.flink.runtime.taskexecutor.TaskExecutor.requestFileUploadByType(TaskExecutor.java:1180) ~[flink-runtime-1.14.4.jar:1.14.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.lambda$handleRpcInvocation$1(AkkaRpcActor.java:316) ~[?:?]
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:83) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcInvocation(AkkaRpcActor.java:314) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleRpcMessage(AkkaRpcActor.java:217) ~[?:?]
+	at org.apache.flink.runtime.rpc.akka.AkkaRpcActor.handleMessage(AkkaRpcActor.java:163) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:24) ~[?:?]
+	at akka.japi.pf.UnitCaseStatement.apply(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction.applyOrElse(PartialFunction.scala:123) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction.applyOrElse$(PartialFunction.scala:122) ~[scala-library-2.12.7.jar:?]
+	at akka.japi.pf.UnitCaseStatement.applyOrElse(CaseStatements.scala:20) ~[?:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:171) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at scala.PartialFunction$OrElse.applyOrElse(PartialFunction.scala:172) ~[scala-library-2.12.7.jar:?]
+	at akka.actor.Actor.aroundReceive(Actor.scala:537) ~[?:?]
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535) ~[?:?]
+	at akka.actor.AbstractActor.aroundReceive(AbstractActor.scala:220) ~[?:?]
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580) ~[?:?]
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548) ~[?:?]
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270) ~[?:?]
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231) ~[?:?]
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692) ~[?:1.8.0_241]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157) ~[?:1.8.0_241]
+21:44:08.308 [Flink-DispatcherRestEndpoint-thread-4] WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
