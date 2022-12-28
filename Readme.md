@@ -1,3 +1,38 @@
+# 介绍
+
+这个项目是我学flink时写的所以demo，都在flinkStream和flinkTable下
+
+大部分demo都是用的socket，source和sink有kafka，mysql等
+
+主要学习的内容为：
+
+1. 一些常用的算子，如map，process等，自定义实现SourceFunction和SinkFunction，
+2. 还有如何落地成文件，demo中实现了写出成parquet文件
+3. flink的精确一次，source端的保证，sink端的保证，和，
+4. checkpoints机制：task层面的重启，以及job层面的重启（savepoint）
+
+4. 状态管理以及TTL，两种状态后端
+
+5. 时间语义：watermark的生成策略，以及数据迟到问题
+
+6. 开窗函数：count，Sliding和Tumbling（sql里面为）以及对应的时间语义的开窗
+
+7. 多流join（包括广播流，coGroup，connect）
+
+8. 自定义定义函数：Scalar，Table
+
+9. Table和SQL API:
+
+​	流表互转，changelog流的实现，
+
+​	catelog对hive的集成
+
+​	开窗
+
+10. 如何将代码打包上传到flink运savepoint，恢复到上一次运行状态
+
+
+
 # Flink
 
 数据流上的有状态计算
@@ -2244,7 +2279,7 @@ public static class EventBean {
 >         num2 as num + 10,	-- 表达式列，类型根据字段自动推断，支持函数
 >         `offset` BIGINT  METADATA VIRTUAL， -- 和下面两种获取元字段，必须加飘号
 >         ts TIMESTAMP_LTZ(3) metadata from 'timestamp',  --从元数据中获取字段,key名必须带引号，同名加飘号
->                         
+>                             
 >         -- primary key (id,num) not enforced --联合主键，主键约束
 >     )with（
 >     	'connector'='kafka'
@@ -2258,7 +2293,7 @@ public static class EventBean {
 >     ```sql
 >     //假设数据长这样，下面为对应的SQL
 >     {"id":1,"friends":[{"name":"a","info":{"address":"北京","gender":"male"}},{"name":"b","info":{"address":"深圳","gender":"female"}}]}
->                     
+>                         
 >     create table test_json3(                                           
 >             id int,                                                        
 >             friends array<row<name string,info mape<string,string>>>       
@@ -2267,7 +2302,7 @@ public static class EventBean {
 >             'path' = 'F:/JavaProject/flink-test/TestData/',                  
 >             'format' = 'json'                                              
 >         )；
->                         
+>                             
 >      -- 这里数组下标从1开始，hive中从0开始
 >      select id,
 >      		friends[1].name as name,
@@ -2282,11 +2317,11 @@ public static class EventBean {
 >      
 >      
 >     ```
->                
+>                    
 >     **csvFormat**
->                
+>                    
 >     "1",""
->                
+>                    
 >     ```
 >     format = csv
 >     csv.field-delimiter=','

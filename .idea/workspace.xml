@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08c823ca-79fc-473f-b27b-784256e6f43c" name="Changes" comment="" />
+    <list default="true" id="08c823ca-79fc-473f-b27b-784256e6f43c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/flinkStream/src/main/java/org/kafka/ABC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flinkTable/src/main/java/com/test/demos/demo15_timewindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/flinkTable/src/main/java/com/test/demos/demo15_timewindow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +23,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,6 +46,7 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2EwGZEAyt2NJ0c5t8xZCeKrz4ne" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +57,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/JavaProject/flink-test/TestData/json.qiantao&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/JavaProject/flink-test&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
@@ -65,11 +73,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JavaProject\flink-test" />
       <recent name="F:\JavaProject\flink-test\TestData\json.qiantao" />
       <recent name="F:\JavaProject\flink-test\flinkTable\src\main\meta\META-INF\services" />
       <recent name="F:\JavaProject\flink-test\flinkTable\src\main\META-INF" />
       <recent name="F:\JavaProject\flink-test\flinkTable\src\main\resources\ META-IN" />
-      <recent name="F:\JavaProject\flink-test\flinkTable\src\main\resources\META-INF\services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\JavaProject\flink-test\TestData\json.嵌套" />
@@ -238,12 +246,27 @@
       <workItem from="1669201816000" duration="1893000" />
       <workItem from="1669261035934" duration="3854000" />
       <workItem from="1669359570172" duration="6880000" />
-      <workItem from="1669451642857" duration="760000" />
+      <workItem from="1669451642857" duration="2339000" />
+      <workItem from="1669631018251" duration="2101000" />
+      <workItem from="1670825061502" duration="3142000" />
+      <workItem from="1671788671202" duration="967000" />
+      <workItem from="1672213004361" duration="697000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -44,6 +44,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
+            <name qname="hudi_test" />
             <name qname="test" />
           </node>
         </introspection-scope>
